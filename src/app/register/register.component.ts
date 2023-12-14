@@ -32,7 +32,7 @@ export class RegisterComponent implements OnInit {
     var uname = this.registerForm.value.uname
     var mobno = this.registerForm.value.mobno
     var pswd = this.registerForm.value.pswd
-    console.log(this.registerForm.valid);
+    // console.log(this.registerForm.valid);
 
 
 

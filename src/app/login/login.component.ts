@@ -44,7 +44,7 @@ export class LoginComponent implements OnInit {
     if (result) {
       alert("Login Successful")
       this.router.navigateByUrl('Home')
-      console.log(this.ds.db);
+      // console.log(this.ds.db);
 
     }
 

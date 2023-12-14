@@ -13,7 +13,7 @@ export class OrderhistoryComponent implements OnInit {
   orderhistory: any;
   constructor(private service: DataService, private router: Router) {
     this.OrderHistory = this.service.orderhistory(this.mobno)
-    console.log(this.OrderHistory);
+    // console.log(this.OrderHistory);
 
 
   }

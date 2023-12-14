@@ -70,7 +70,7 @@ export class MenupageComponent implements OnInit {
       if (result) {
         alert(fullname + "Your Order" + this.data[0].foodName + "confirmed:")
         this.router.navigateByUrl('Home/OrderDetails')
-        console.log(this.services.db)
+        // console.log(this.services.db)
       }
 
     }
