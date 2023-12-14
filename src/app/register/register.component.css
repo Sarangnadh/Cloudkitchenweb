@@ -1,0 +1,20 @@
+.reg,
+html,
+body {
+    background-image: url('../../assets/img/restaurant-interior_1127-3392.avif'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    height: 700px;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+
+    align-content: center;
+}
+
+.card {
+    height: 375px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}

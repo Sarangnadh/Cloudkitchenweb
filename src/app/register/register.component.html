@@ -1,0 +1,60 @@
+<div class="container col-md-12 mt-0 reg">
+	<div class="d-flex justify-content-center h-100">
+		<div class="card">
+			<div class="card-header">
+				<h3 class="text-center">Sign In</h3>
+
+			</div>
+			<div class="card-body">
+				<form [formGroup]="registerForm" (ngSubmit)="register()">
+
+					<!-- register username -->
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+						<input type="text" class="form-control" placeholder="UserName" name="uname"
+							formControlName="uname" id="register_usernme" required>
+					</div>
+					<div *ngIf="this.registerForm.get('uname')?.errors&&this.registerForm.get('uname')?.touched"
+						style="color:red;">Invalid Username</div>
+
+
+					<!-- Register Mobno -->
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+						<input type="text" class="form-control" placeholder="Mobile number" name="mobno"
+							formControlName="mobno" id="register_mobno" required>
+
+					</div>
+					<div *ngIf="this.registerForm.get('mobno')?.errors&&this.registerForm.get('mobno')?.touched"
+						style="color:red;">Invalid Mobile number</div>
+
+
+
+					<!-- register password-->
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-key"></i></span>
+						</div>
+						<input type="password" class="form-control" placeholder="Password" name="pswd"
+							formControlName="pswd" id="registerpassword" required>
+					</div>
+					<div *ngIf="this.registerForm.get('pswd')?.errors&&this.registerForm.get('pswd')?.touched"
+						style="color:red;">Invalid Password</div>
+
+
+
+					<div class="form-group">
+						<input type="submit" value="register" class="btn float-right login_btn " style="width:50%">
+						<p style="color:white;align-items:baseline;">already existing user? <a routerLink="">Login</a>
+						</p>
+
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

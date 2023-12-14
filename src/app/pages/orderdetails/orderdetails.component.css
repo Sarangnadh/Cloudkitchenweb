@@ -1,0 +1,16 @@
+.df {
+    align-items: center;
+}
+
+.deli,
+html,
+body {
+    background-image: url('../../../assets/img/way-concept-illustration_114360-1191.avif');
+    height: 700px;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+
+    align-content: center;
+}

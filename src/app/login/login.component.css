@@ -1,0 +1,20 @@
+.login,
+html,
+body {
+    background-image: url('../../assets/img/two-women-sitting-cafe_74855-11174.jpg');
+    height: 700px;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+
+    align-content: center;
+}
+
+.card {
+    height: 350px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}

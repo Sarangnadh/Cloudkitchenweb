@@ -1,0 +1,38 @@
+table,
+tr,
+th,
+td {
+    border: 2px black solid;
+    padding: 10px;
+    margin-left: 545px;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+td,
+th {
+    color: brown;
+}
+
+table {
+
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.des,
+html,
+body {
+    background-image: url('../../../assets/img/hand-pointing-clipboard-among-mexican-food_23-2147740710.jpg');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    align-content: center;
+}

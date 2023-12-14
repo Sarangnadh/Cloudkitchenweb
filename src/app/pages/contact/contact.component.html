@@ -1,0 +1,43 @@
+<div class="container">
+    <h1>Contact</h1>
+    <form class="col-lg-8" [formGroup]="contactForm" (ngSubmit)="contact()">
+
+        <div class="row">
+
+            <!-- firstname -->
+            <div class="col-lg-6 mt-2 mb-2">
+                <input type="text" class="form-control" placeholder="Enter First Name" name="firstname"
+                    formControlName="firstname" id="conactlog" required>
+            </div>
+
+
+            <!-- lastname -->
+            <div class="col-lg-6 mt-2 mb-2">
+                <input type="text" class="form-control" placeholder="Enter Last Name" name="lastname"
+                    formControlName="firstname" id="conactlog" required>
+            </div>
+
+
+            <!-- emailid -->
+            <div class="col-lg-12 mt-2 mb-2">
+                <input type="text" class="form-control" placeholder="Enter Email ID" name="email"
+                    formControlName="firstname" id="conactlog" required>
+            </div>
+
+
+            <!-- contactnumber -->
+
+            <div class="col-lg-12 mt-2 mb-2">
+                <input type="text" class="form-control" placeholder="Enter Mobile number" name="lastname"
+                    formControlName="firstname" id="conactlog" required>
+            </div>
+
+
+            <div class="col-lg-12 mt-2 mb-2">
+                <button class="btn btn-md btn-dark">Submit</button>
+            </div>
+
+        </div>
+
+    </form>
+</div>

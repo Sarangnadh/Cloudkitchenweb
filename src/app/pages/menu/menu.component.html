@@ -1,0 +1,37 @@
+<!-- Section-->
+<section class="py-5">
+    <button class="btn btn-warning" (click)="logout()" style="float:right; margin-right: 10px;">logout</button>
+
+
+    <button class="btn btn-warning" routerLink="/Home" style="float:right; margin-right: 10px;">back</button>
+
+    <div class="container px-4 px-lg-4 mt-5">
+
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+
+            <div class="col mb-5 foodbox" *ngFor="let fd of foodData">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <div class="w-100" [style.minWidth.px]="320" [style.height.px]="300"
+                        [style.background]="'url(' + fd.foodImg + ')'" [style.backgroundSize]="'cover'"></div>
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">{{fd.foodName}}</h5>
+                            <!-- Product price-->
+                            <p class="card-text">{{fd.foodDetails}}</p>
+                            <p>{{fd.foodPrice | currency:'INR'}}</p>
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="buybtn btn-outline-dark mt-auto"
+                                [routerLink]="['/menu',fd.id]">Buy Now &nbsp;<i class="bi bi-bag"></i></a></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

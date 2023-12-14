@@ -1,0 +1,51 @@
+<div class="row  mt-3 ms-4 des">
+    <div class=" col-md-12 mt-0">
+        <button class="btn btn-warning" (click)="logout()"
+            style="float:right; margin-right: 10px; margin-top: 12px;">logout</button>
+
+        <button class="btn btn-warning" routerLink="/Home"
+            style="float:right; margin-right: 10px; margin-top: 12px;">back</button>
+
+
+        <h1 style="color: azure;">YOUR ORDERS</h1>
+
+
+        <div *ngFor="let o of OrderHistory">
+            <table>
+                <thead>
+
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th>Customer Name:</th>
+                        <td>{{o.CustomerName}}</td>
+                    </tr>
+                    <tr>
+                        <th>Ordered Item :</th>
+                        <td> {{o.OrderItem}}</td>
+
+                    </tr>
+                    <tr>
+                        <th>Payed Amount:</th>
+                        <td>{{o.payAmount}}</td>
+                    </tr>
+                    <tr>
+                        <th>Delivery Address:</th>
+                        <td>{{o.DeliveryAddress}}</td>
+                    </tr>
+                    <tr>
+                        <th>Customer Number</th>
+                        <td>{{o.CustomerCallnumber}}</td>
+                        <br>
+                    </tr>
+
+                </tbody>
+
+            </table><br>
+            <br>
+
+        </div>
+    </div>
+
+</div>
